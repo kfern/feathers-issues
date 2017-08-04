@@ -1,4 +1,4 @@
-# feathers-issues-635
+# feathers-issues
 
 > 
 
@@ -14,7 +14,7 @@ Getting up and running is as easy as 1, 2, 3.
 2. Install your dependencies
 
     ```
-    cd path/to/feathers-issues-635; npm install
+    cd path/to/feathers-issues; npm install
     ```
 
 3. Start your app
