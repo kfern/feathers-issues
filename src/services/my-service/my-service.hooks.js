@@ -1,11 +1,12 @@
 
+const testA635 = require('../../hooks/test-a-635');
 
 module.exports = {
   before: {
     all: [],
     find: [],
     get: [],
-    create: [],
+    create: [testA635()],
     update: [],
     patch: [],
     remove: []
