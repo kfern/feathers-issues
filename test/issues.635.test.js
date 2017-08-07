@@ -9,7 +9,12 @@ describe('Feathers issues 635', () => {
         assert.ok(true, 'my-service.catch: create with empty data must fail');
       })    
       .then(function(result) {
-        assert.equal(typeof(result.id), 'undefined', 'my-service.then: create with empty data must fail');
+        let ok = true;
+        if (result && typeof(result.id) !== 'undefined'){
+          ok = false;
+        }
+        
+        assert.ok(ok, 'my-service.then: create with empty data must fail');
       });
   });//it
 });//describe
