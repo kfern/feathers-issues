@@ -12,6 +12,8 @@ describe('\'testA635\' hook', () => {
     // and compare the resulting hook object
     return hook(mock).then(result => {
       assert.equal(result, mock, 'Returns the expected hook object');
+    }).catch(result => {
+      assert.ok(result.type === 'FeathersError', 'Returns the expected FeathersError object');
     });
   });
 });
